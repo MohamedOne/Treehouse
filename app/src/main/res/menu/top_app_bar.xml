@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.firebasesample.MainScreenActivity">
+    <item
+        android:id="@+id/user_account"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:title="@string/account"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/overflow"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="always"/>
+
+
+</menu>

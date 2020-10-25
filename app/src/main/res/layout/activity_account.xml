@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name: "
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/set_user_name"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/header_user_name"/>
+
+            <ImageView
+                android:id="@+id/user_profile_pic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:srcCompat="@android:color/holo_orange_dark"
+                android:layout_below="@+id/header_user_name"/>
+
+
+            <Button
+                android:id="@+id/set_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change image"
+                android:layout_below="@+id/user_profile_pic" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/mainScreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main"
+        app:layout_constraintRight_toLeftOf="@+id/logout_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
